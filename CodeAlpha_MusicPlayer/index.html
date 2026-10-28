@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player">
+        <h1>My Music Player</h1>
+
+        <img id="cover"
+             src="https://placehold.co/300x300/222/fff?text=Music"
+             alt="Album cover">
+
+        <h2 id="title">My First Song</h2>
+        <p id="artist">Unknown Artist</p>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-area">
+            <span id="current">0:00</span>
+            <input type="range" id="progress"
+                   value="0" min="0" max="100">
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+        <label for="volume">Volume</label>
+        <input type="range" id="volume"
+               min="0" max="1" step="0.01" value="0.7">
+
+        <h3>My Playlist</h3>
+        <ul id="playlist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
